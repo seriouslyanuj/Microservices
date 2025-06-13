@@ -98,8 +98,8 @@ or directly from your IDE (IntelliJ, Eclipse).
 
 ## 🧠 What I Learned
 
-✅ Microservices communication using Feign
-✅ API Gateway for centralized routing
-✅ Service registration with Eureka
-✅ Clean RESTful API design
-✅ Modular service deployment and scaling
+- ✅ Microservices communication using **Feign**  
+- ✅ API Gateway for centralized **routing**  
+- ✅ Service registration with **Eureka**  
+- ✅ Clean **RESTful API** design  
+- ✅ Modular service **deployment and scaling**
