@@ -1,6 +1,10 @@
 # 🎯 QuizApp – Microservices-Based Quiz Management System
 
-![Spring Boot](https://img.shields.io/badge/SpringBoot-3.0-green.svg) ![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue) ![Microservices](https://img.shields.io/badge/Architecture-Microservices-orange)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-3.0-green.svg)
+![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue)
+![Microservices](https://img.shields.io/badge/Architecture-Microservices-orange)
+
+---
 
 ## 📖 Overview
 
@@ -26,10 +30,10 @@ It uses **Spring Cloud**, **Eureka Server**, **OpenFeign**, and **Spring Gateway
 
 ## 📂 Microservice Modules
 
-- **Quiz-Service**: Handles quiz creation, question fetching, and score calculation
-- **Question-Service**: Manages question bank (CRUD)
-- **API-Gateway**: Routes and load-balances API requests
-- **Eureka-Server**: Service discovery and registration
+- **Quiz-Service**: Handles quiz creation, question fetching, and score calculation.
+- **Question-Service**: Manages the question bank (CRUD operations).
+- **API-Gateway**: Routes and load-balances API requests.
+- **Eureka-Server**: Service discovery and registration.
 
 ---
 
@@ -47,9 +51,57 @@ It uses **Spring Cloud**, **Eureka Server**, **OpenFeign**, and **Spring Gateway
 
 ---
 
-##🧠 What I Learned
+## 🧪 How to Run the Project
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/seriouslyanuj/QuizApp.git
+cd QuizApp
+````
+---
+
+### 2️⃣ Set up PostgreSQL
+
+```sql
+CREATE DATABASE quizdb;
+```
+---
+
+### 3️⃣ Configure `application.properties` for each service
+
+Update the following in each module:
+
+* PostgreSQL DB URL, username, password
+* Port numbers
+* Eureka server URL
+
+---
+
+### 4️⃣ Run Services in Order
+
+Start the services one by one:
+
+1. Eureka Server
+2. Question Service
+3. Quiz Service
+4. API Gateway
+
+Run using:
+
+```bash
+./mvnw spring-boot:run
+```
+
+or directly from your IDE (IntelliJ, Eclipse).
+
+---
+
+## 🧠 What I Learned
+
 ✅ Microservices communication using Feign
 ✅ API Gateway for centralized routing
 ✅ Service registration with Eureka
 ✅ Clean RESTful API design
 ✅ Modular service deployment and scaling
+
+```
