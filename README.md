@@ -103,5 +103,3 @@ or directly from your IDE (IntelliJ, Eclipse).
 ✅ Service registration with Eureka
 ✅ Clean RESTful API design
 ✅ Modular service deployment and scaling
-
-```
