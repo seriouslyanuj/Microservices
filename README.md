@@ -47,45 +47,7 @@ It uses **Spring Cloud**, **Eureka Server**, **OpenFeign**, and **Spring Gateway
 
 ---
 
-## 🧪 How to Run the Project
-
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/seriouslyanuj/QuizApp.git
-cd QuizApp
-2️⃣ Set up PostgreSQL
-sql
-Copy
-Edit
-CREATE DATABASE quizdb;
-3️⃣ Configure application.properties for each service
-Update DB URLs, ports, and Eureka URLs in each module.
-
-4️⃣ Run Services in Order
-Eureka Server
-
-Question Service
-
-Quiz Service
-
-API Gateway
-
-Use ./mvnw spring-boot:run or run each application from your IDE.
-3️⃣ Configure application.properties for each service
-Update DB URLs, ports, and Eureka URLs in each module.
-
-4️⃣ Run Services in Order
-Eureka Server
-
-Question Service
-
-Quiz Service
-
-API Gateway
-
-Use ./mvnw spring-boot:run or run each application from your IDE.
-
-🧠 What I Learned
+##🧠 What I Learned
 ✅ Microservices communication using Feign
 ✅ API Gateway for centralized routing
 ✅ Service registration with Eureka
